@@ -1,2 +1,9 @@
--main Main
+-main BloomFilter
+-cp src
 -debug
+-js build/bloomfilter.js
+
+--next
+
+-cp src
+-neko build/Boomfilter.n
