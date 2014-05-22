@@ -5,10 +5,11 @@ lib
 .settings/
 .project/
 
-Thumbs.db
-.DS_Store
+build/ 
+
 TestSuite.hx
 .mcover
+
 # OS junk
 Thumbs.db
 .DS_Store
