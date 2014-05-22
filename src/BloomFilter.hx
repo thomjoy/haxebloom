@@ -9,14 +9,14 @@ class BloomFilter
 	var _locations = [];
 	var buckets = [];
 
-	public function new(m, k)
+	public function new(m:Dynamic, k:Int)
 	{
 		var i = -1;
 
 		this.k = k;
 		this.m = m;
 
-		/*if( Std.is(m, Array) )
+		if( Std.is(m, Array) )
 		{
 			var n = Std.int( m.length * 32 );
 			while( ++i < n )
@@ -25,15 +25,14 @@ class BloomFilter
 			}
 		}
 
-		else
-		{*/
-
-		var n = Math.ceil( m / 32 );
-		while( ++i < n )
+		if( Std.is(m, Int) )
 		{
-			this.buckets[i] = 0;
+			var n = Math.ceil( m / 32 );
+			while( ++i < n )
+			{
+				this.buckets[i] = 0;
+			}
 		}
-		
 	}
 
 	public function locations(v)
@@ -89,6 +88,7 @@ class BloomFilter
 	public static function main()
 	{
 		var bloom = new BloomFilter(32, 4);
+		//var bloom = new BloomFilter(['Thom', 'Tim', 'Nick'], 4);
 		bloom.add('Thom');
 		bloom.add('Tim');
 		bloom.add('Nick');

@@ -3,14 +3,26 @@ var BloomFilter = function(m,k) {
 	this.buckets = [];
 	this._locations = [];
 	var i = -1;
-	var k1 = k;
-	var n = Math.ceil(m / 32);
-	while(++i < n) this.buckets[i] = 0;
+	this.k = k;
+	this.m = m;
+	if((m instanceof Array) && m.__enum__ == null) {
+		var n = m.length * 32 | 0;
+		while(++i < n) this.buckets[i] = m[i];
+	}
+	if(((m | 0) === m)) {
+		var n1 = Math.ceil(m / 32);
+		while(++i < n1) this.buckets[i] = 0;
+	}
 };
 BloomFilter.main = function() {
 	var bloom = new BloomFilter(32,4);
 	bloom.add("Thom");
+	bloom.add("Tim");
+	bloom.add("Nick");
 	console.log(bloom.has("Thom"));
+	console.log(bloom.has("Tim"));
+	console.log(bloom.has("Nick"));
+	console.log(bloom.has("No"));
 };
 BloomFilter.prototype = {
 	locations: function(v) {
@@ -23,7 +35,7 @@ BloomFilter.prototype = {
 		var x = (a | 0) % (m | 0);
 		while(++i < k) {
 			if(x < 0) r[i] = x + m | 0; else r[i] = x | 0;
-			x = (x + b | 0) % (m | 0);
+			x = (x + b | 0 | 0) % (m | 0);
 		}
 		return r;
 	}
@@ -31,18 +43,16 @@ BloomFilter.prototype = {
 		var l = this.locations(v);
 		var i = -1;
 		var k = this.k;
-		var buckets = this.buckets;
-		while(++i < k) buckets[Math.floor((l[i] | 0) / 32)] |= 1 << (l[i] | 0) % 32;
+		while(++i < k) this.buckets[Std["int"](Math.floor(l[i]) / 32)] |= 1 << (l[i] | 0) % 32;
 	}
 	,has: function(v) {
 		var l = this.locations(v);
 		var i = -1;
 		var k = this.k;
 		var b;
-		var buckets = this.buckets;
 		while(++i < k) {
 			b = l[i] | 0;
-			if((buckets[Std["int"](Math.floor(b / 32))] & 1 << ((b | 0) % 32 | 0)) == 0) return false;
+			if((this.buckets[Std["int"](Math.floor(b / 32))] & 1 << ((b | 0) % 32 | 0)) == 0) return false;
 		}
 		return true;
 	}
