@@ -1,0 +1,465 @@
+<xml>
+<set name="HXCPP_API_LEVEL" value="311" />
+<files id="haxe">
+<compilerflag value="-Iinclude"/>
+  <file name="src/sys/net/Socket.cpp">
+   <depend name="include/cpp/Lib.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/Input.h"/>
+   <depend name="include/haxe/io/Output.h"/>
+   <depend name="include/sys/net/Host.h"/>
+   <depend name="include/sys/net/Socket.h"/>
+   <depend name="include/sys/net/_Socket/SocketInput.h"/>
+   <depend name="include/sys/net/_Socket/SocketOutput.h"/>
+  </file>
+  <file name="src/sys/net/_Socket/SocketOutput.cpp">
+   <depend name="include/cpp/Lib.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/Error.h"/>
+   <depend name="include/haxe/io/Output.h"/>
+   <depend name="include/sys/net/_Socket/SocketOutput.h"/>
+  </file>
+  <file name="src/sys/net/_Socket/SocketInput.cpp">
+   <depend name="include/cpp/Lib.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/Eof.h"/>
+   <depend name="include/haxe/io/Error.h"/>
+   <depend name="include/haxe/io/Input.h"/>
+   <depend name="include/sys/net/_Socket/SocketInput.h"/>
+  </file>
+  <file name="src/sys/net/Host.cpp">
+   <depend name="include/cpp/Lib.h"/>
+   <depend name="include/sys/net/Host.h"/>
+  </file>
+  <file name="src/org/hamcrest/UnsupportedOperationException.cpp">
+   <depend name="include/org/hamcrest/Exception.h"/>
+   <depend name="include/org/hamcrest/UnsupportedOperationException.h"/>
+  </file>
+  <file name="src/org/hamcrest/MissingImplementationException.cpp">
+   <depend name="include/org/hamcrest/Exception.h"/>
+   <depend name="include/org/hamcrest/MissingImplementationException.h"/>
+  </file>
+  <file name="src/org/hamcrest/IllegalArgumentException.cpp">
+   <depend name="include/org/hamcrest/Exception.h"/>
+   <depend name="include/org/hamcrest/IllegalArgumentException.h"/>
+  </file>
+  <file name="src/org/hamcrest/AssertionException.cpp">
+   <depend name="include/org/hamcrest/AssertionException.h"/>
+   <depend name="include/org/hamcrest/Exception.h"/>
+  </file>
+  <file name="src/org/hamcrest/Exception.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/Type.h"/>
+   <depend name="include/org/hamcrest/Exception.h"/>
+  </file>
+  <file name="src/massive/munit/util/Timer.cpp">
+   <depend name="include/Sys.h"/>
+   <depend name="include/cpp/vm/Thread.h"/>
+   <depend name="include/haxe/Log.h"/>
+   <depend name="include/massive/munit/util/Timer.h"/>
+  </file>
+  <file name="src/massive/munit/util/MathUtil.cpp">
+   <depend name="include/massive/munit/util/MathUtil.h"/>
+  </file>
+  <file name="src/massive/munit/client/SummaryReportClient.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/massive/munit/IAdvancedTestResultClient.h"/>
+   <depend name="include/massive/munit/ICoverageTestResultClient.h"/>
+   <depend name="include/massive/munit/ITestResultClient.h"/>
+   <depend name="include/massive/munit/TestResult.h"/>
+   <depend name="include/massive/munit/client/AbstractTestResultClient.h"/>
+   <depend name="include/massive/munit/client/SummaryReportClient.h"/>
+  </file>
+  <file name="src/massive/munit/client/RichPrintClient.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/Sys.h"/>
+   <depend name="include/haxe/Log.h"/>
+   <depend name="include/massive/haxe/Exception.h"/>
+   <depend name="include/massive/munit/AssertionException.h"/>
+   <depend name="include/massive/munit/IAdvancedTestResultClient.h"/>
+   <depend name="include/massive/munit/ICoverageTestResultClient.h"/>
+   <depend name="include/massive/munit/ITestResultClient.h"/>
+   <depend name="include/massive/munit/MUnitException.h"/>
+   <depend name="include/massive/munit/TestResult.h"/>
+   <depend name="include/massive/munit/TestResultType.h"/>
+   <depend name="include/massive/munit/client/AbstractTestResultClient.h"/>
+   <depend name="include/massive/munit/client/ExternalPrintClient.h"/>
+   <depend name="include/massive/munit/client/ExternalPrintClientJS.h"/>
+   <depend name="include/massive/munit/client/PrintClientBase.h"/>
+   <depend name="include/massive/munit/client/RichPrintClient.h"/>
+   <depend name="include/massive/munit/util/MathUtil.h"/>
+  </file>
+  <file name="src/massive/munit/client/ExternalPrintClientJS.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/StringTools.h"/>
+   <depend name="include/massive/munit/client/ExternalPrintClient.h"/>
+   <depend name="include/massive/munit/client/ExternalPrintClientJS.h"/>
+  </file>
+  <file name="src/massive/munit/client/ExternalPrintClient.cpp">
+   <depend name="include/massive/munit/client/ExternalPrintClient.h"/>
+  </file>
+  <file name="src/massive/munit/client/PrintClient.cpp">
+   <depend name="include/Sys.h"/>
+   <depend name="include/haxe/Log.h"/>
+   <depend name="include/massive/munit/IAdvancedTestResultClient.h"/>
+   <depend name="include/massive/munit/ICoverageTestResultClient.h"/>
+   <depend name="include/massive/munit/ITestResultClient.h"/>
+   <depend name="include/massive/munit/client/AbstractTestResultClient.h"/>
+   <depend name="include/massive/munit/client/PrintClient.h"/>
+   <depend name="include/massive/munit/client/PrintClientBase.h"/>
+  </file>
+  <file name="src/massive/munit/client/PrintClientBase.cpp">
+   <depend name="include/Lambda.h"/>
+   <depend name="include/List.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/StringTools.h"/>
+   <depend name="include/massive/haxe/Exception.h"/>
+   <depend name="include/massive/munit/AssertionException.h"/>
+   <depend name="include/massive/munit/IAdvancedTestResultClient.h"/>
+   <depend name="include/massive/munit/ICoverageTestResultClient.h"/>
+   <depend name="include/massive/munit/ITestResultClient.h"/>
+   <depend name="include/massive/munit/MUnitException.h"/>
+   <depend name="include/massive/munit/TestResult.h"/>
+   <depend name="include/massive/munit/TestResultType.h"/>
+   <depend name="include/massive/munit/client/AbstractTestResultClient.h"/>
+   <depend name="include/massive/munit/client/PrintClientBase.h"/>
+   <depend name="include/massive/munit/util/MathUtil.h"/>
+  </file>
+  <file name="src/massive/munit/client/JUnitReportClient.cpp">
+   <depend name="include/Date.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/StringBuf.h"/>
+   <depend name="include/massive/haxe/Exception.h"/>
+   <depend name="include/massive/munit/AssertionException.h"/>
+   <depend name="include/massive/munit/IAdvancedTestResultClient.h"/>
+   <depend name="include/massive/munit/ITestResultClient.h"/>
+   <depend name="include/massive/munit/MUnitException.h"/>
+   <depend name="include/massive/munit/TestResult.h"/>
+   <depend name="include/massive/munit/client/JUnitReportClient.h"/>
+   <depend name="include/massive/munit/util/MathUtil.h"/>
+   <depend name="include/massive/munit/util/Timer.h"/>
+  </file>
+  <file name="src/massive/munit/client/URLRequest.cpp">
+   <depend name="include/IMap.h"/>
+   <depend name="include/haxe/Http.h"/>
+   <depend name="include/haxe/ds/StringMap.h"/>
+   <depend name="include/massive/munit/client/URLRequest.h"/>
+  </file>
+  <file name="src/massive/munit/client/HTTPClient.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/massive/munit/IAdvancedTestResultClient.h"/>
+   <depend name="include/massive/munit/ITestResultClient.h"/>
+   <depend name="include/massive/munit/TestResult.h"/>
+   <depend name="include/massive/munit/client/HTTPClient.h"/>
+   <depend name="include/massive/munit/client/URLRequest.h"/>
+  </file>
+  <file name="src/massive/munit/client/AbstractTestResultClient.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/haxe/Log.h"/>
+   <depend name="include/massive/munit/IAdvancedTestResultClient.h"/>
+   <depend name="include/massive/munit/ICoverageTestResultClient.h"/>
+   <depend name="include/massive/munit/ITestResultClient.h"/>
+   <depend name="include/massive/munit/TestResult.h"/>
+   <depend name="include/massive/munit/TestResultType.h"/>
+   <depend name="include/massive/munit/client/AbstractTestResultClient.h"/>
+  </file>
+  <file name="src/massive/munit/async/MissingAsyncDelegateException.cpp">
+   <depend name="include/massive/haxe/Exception.h"/>
+   <depend name="include/massive/haxe/util/ReflectUtil.h"/>
+   <depend name="include/massive/munit/MUnitException.h"/>
+   <depend name="include/massive/munit/async/MissingAsyncDelegateException.h"/>
+  </file>
+  <file name="src/massive/munit/async/AsyncTimeoutException.cpp">
+   <depend name="include/massive/haxe/Exception.h"/>
+   <depend name="include/massive/haxe/util/ReflectUtil.h"/>
+   <depend name="include/massive/munit/MUnitException.h"/>
+   <depend name="include/massive/munit/async/AsyncTimeoutException.h"/>
+  </file>
+  <file name="src/massive/munit/async/AsyncFactory.cpp">
+   <depend name="include/massive/munit/async/AsyncDelegate.h"/>
+   <depend name="include/massive/munit/async/AsyncFactory.h"/>
+   <depend name="include/massive/munit/async/IAsyncDelegateObserver.h"/>
+  </file>
+  <file name="src/massive/munit/async/AsyncDelegate.cpp">
+   <depend name="include/Reflect.h"/>
+   <depend name="include/massive/munit/async/AsyncDelegate.h"/>
+   <depend name="include/massive/munit/async/IAsyncDelegateObserver.h"/>
+   <depend name="include/massive/munit/util/Timer.h"/>
+  </file>
+  <file name="src/massive/munit/UnhandledException.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/haxe/CallStack.h"/>
+   <depend name="include/haxe/StackItem.h"/>
+   <depend name="include/massive/haxe/Exception.h"/>
+   <depend name="include/massive/haxe/util/ReflectUtil.h"/>
+   <depend name="include/massive/munit/MUnitException.h"/>
+   <depend name="include/massive/munit/UnhandledException.h"/>
+  </file>
+  <file name="src/massive/munit/TestRunner.cpp">
+   <depend name="include/Reflect.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/Sys.h"/>
+   <depend name="include/Type.h"/>
+   <depend name="include/cpp/vm/Thread.h"/>
+   <depend name="include/massive/haxe/Exception.h"/>
+   <depend name="include/massive/munit/Assert.h"/>
+   <depend name="include/massive/munit/AssertionException.h"/>
+   <depend name="include/massive/munit/IAdvancedTestResultClient.h"/>
+   <depend name="include/massive/munit/ITestResultClient.h"/>
+   <depend name="include/massive/munit/MUnitException.h"/>
+   <depend name="include/massive/munit/TestClassHelper.h"/>
+   <depend name="include/massive/munit/TestResult.h"/>
+   <depend name="include/massive/munit/TestRunner.h"/>
+   <depend name="include/massive/munit/TestSuite.h"/>
+   <depend name="include/massive/munit/UnhandledException.h"/>
+   <depend name="include/massive/munit/async/AsyncDelegate.h"/>
+   <depend name="include/massive/munit/async/AsyncFactory.h"/>
+   <depend name="include/massive/munit/async/AsyncTimeoutException.h"/>
+   <depend name="include/massive/munit/async/IAsyncDelegateObserver.h"/>
+   <depend name="include/massive/munit/async/MissingAsyncDelegateException.h"/>
+   <depend name="include/massive/munit/util/Timer.h"/>
+   <depend name="include/org/hamcrest/AssertionException.h"/>
+   <depend name="include/org/hamcrest/Exception.h"/>
+  </file>
+  <file name="src/massive/munit/async/IAsyncDelegateObserver.cpp">
+   <depend name="include/massive/munit/async/AsyncDelegate.h"/>
+   <depend name="include/massive/munit/async/IAsyncDelegateObserver.h"/>
+  </file>
+  <file name="src/massive/munit/TestResultType.cpp">
+   <depend name="include/massive/munit/TestResultType.h"/>
+  </file>
+  <file name="src/massive/munit/TestResult.cpp">
+   <depend name="include/massive/haxe/Exception.h"/>
+   <depend name="include/massive/munit/AssertionException.h"/>
+   <depend name="include/massive/munit/MUnitException.h"/>
+   <depend name="include/massive/munit/TestResult.h"/>
+   <depend name="include/massive/munit/TestResultType.h"/>
+  </file>
+  <file name="src/massive/munit/TestClassHelper.cpp">
+   <depend name="include/Reflect.h"/>
+   <depend name="include/Type.h"/>
+   <depend name="include/haxe/rtti/Meta.h"/>
+   <depend name="include/massive/munit/TestClassHelper.h"/>
+   <depend name="include/massive/munit/TestResult.h"/>
+  </file>
+  <file name="src/massive/munit/ICoverageTestResultClient.cpp">
+   <depend name="include/massive/munit/IAdvancedTestResultClient.h"/>
+   <depend name="include/massive/munit/ICoverageTestResultClient.h"/>
+   <depend name="include/massive/munit/ITestResultClient.h"/>
+  </file>
+  <file name="src/massive/munit/IAdvancedTestResultClient.cpp">
+   <depend name="include/massive/munit/IAdvancedTestResultClient.h"/>
+   <depend name="include/massive/munit/ITestResultClient.h"/>
+  </file>
+  <file name="src/massive/munit/ITestResultClient.cpp">
+   <depend name="include/massive/munit/ITestResultClient.h"/>
+   <depend name="include/massive/munit/TestResult.h"/>
+  </file>
+  <file name="src/massive/munit/AssertionException.cpp">
+   <depend name="include/massive/haxe/Exception.h"/>
+   <depend name="include/massive/haxe/util/ReflectUtil.h"/>
+   <depend name="include/massive/munit/AssertionException.h"/>
+   <depend name="include/massive/munit/MUnitException.h"/>
+  </file>
+  <file name="src/massive/munit/MUnitException.cpp">
+   <depend name="include/massive/haxe/Exception.h"/>
+   <depend name="include/massive/haxe/util/ReflectUtil.h"/>
+   <depend name="include/massive/munit/MUnitException.h"/>
+  </file>
+  <file name="src/massive/munit/Assert.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/Type.h"/>
+   <depend name="include/ValueType.h"/>
+   <depend name="include/massive/haxe/Exception.h"/>
+   <depend name="include/massive/munit/Assert.h"/>
+   <depend name="include/massive/munit/AssertionException.h"/>
+   <depend name="include/massive/munit/MUnitException.h"/>
+  </file>
+  <file name="src/massive/haxe/util/ReflectUtil.cpp">
+   <depend name="include/massive/haxe/util/ReflectUtil.h"/>
+  </file>
+  <file name="src/massive/haxe/Exception.cpp">
+   <depend name="include/massive/haxe/Exception.h"/>
+   <depend name="include/massive/haxe/util/ReflectUtil.h"/>
+  </file>
+  <file name="src/haxe/rtti/Meta.cpp">
+   <depend name="include/haxe/rtti/Meta.h"/>
+  </file>
+  <file name="src/haxe/io/Input.cpp">
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/Error.h"/>
+   <depend name="include/haxe/io/Input.h"/>
+  </file>
+  <file name="src/haxe/io/Error.cpp">
+   <depend name="include/haxe/io/Error.h"/>
+  </file>
+  <file name="src/haxe/io/Eof.cpp">
+   <depend name="include/haxe/io/Eof.h"/>
+  </file>
+  <file name="src/haxe/io/BytesOutput.cpp">
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/BytesBuffer.h"/>
+   <depend name="include/haxe/io/BytesOutput.h"/>
+   <depend name="include/haxe/io/Error.h"/>
+   <depend name="include/haxe/io/Output.h"/>
+  </file>
+  <file name="src/haxe/io/Output.cpp">
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/Error.h"/>
+   <depend name="include/haxe/io/Output.h"/>
+  </file>
+  <file name="src/haxe/io/BytesBuffer.cpp">
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/BytesBuffer.h"/>
+  </file>
+  <file name="src/haxe/io/Bytes.cpp">
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/Error.h"/>
+  </file>
+  <file name="src/haxe/ds/StringMap.cpp">
+   <depend name="include/IMap.h"/>
+   <depend name="include/haxe/ds/StringMap.h"/>
+  </file>
+  <file name="src/haxe/Log.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/haxe/Log.h"/>
+  </file>
+  <file name="src/haxe/Http.cpp">
+   <depend name="include/EReg.h"/>
+   <depend name="include/IMap.h"/>
+   <depend name="include/Lambda.h"/>
+   <depend name="include/List.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/StringBuf.h"/>
+   <depend name="include/StringTools.h"/>
+   <depend name="include/haxe/Http.h"/>
+   <depend name="include/haxe/ds/StringMap.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/BytesBuffer.h"/>
+   <depend name="include/haxe/io/BytesOutput.h"/>
+   <depend name="include/haxe/io/Eof.h"/>
+   <depend name="include/haxe/io/Error.h"/>
+   <depend name="include/haxe/io/Input.h"/>
+   <depend name="include/haxe/io/Output.h"/>
+   <depend name="include/sys/net/Host.h"/>
+   <depend name="include/sys/net/Socket.h"/>
+  </file>
+  <file name="src/haxe/CallStack.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/haxe/CallStack.h"/>
+   <depend name="include/haxe/StackItem.h"/>
+  </file>
+  <file name="src/haxe/StackItem.cpp">
+   <depend name="include/haxe/StackItem.h"/>
+  </file>
+  <file name="src/cpp/vm/Thread.cpp">
+   <depend name="include/cpp/vm/Thread.h"/>
+  </file>
+  <file name="src/Type.cpp">
+   <depend name="include/Reflect.h"/>
+   <depend name="include/Type.h"/>
+   <depend name="include/ValueType.h"/>
+  </file>
+  <file name="src/ValueType.cpp">
+   <depend name="include/ValueType.h"/>
+  </file>
+  <file name="src/TestSuite.cpp">
+   <depend name="include/BloomFilterTest.h"/>
+   <depend name="include/TestSuite.h"/>
+   <depend name="include/massive/munit/TestSuite.h"/>
+  </file>
+  <file name="src/massive/munit/TestSuite.cpp">
+   <depend name="include/Type.h"/>
+   <depend name="include/massive/munit/TestSuite.h"/>
+  </file>
+  <file name="src/TestMain.cpp">
+   <depend name="include/Sys.h"/>
+   <depend name="include/TestMain.h"/>
+   <depend name="include/TestSuite.h"/>
+   <depend name="include/massive/munit/IAdvancedTestResultClient.h"/>
+   <depend name="include/massive/munit/ICoverageTestResultClient.h"/>
+   <depend name="include/massive/munit/ITestResultClient.h"/>
+   <depend name="include/massive/munit/TestRunner.h"/>
+   <depend name="include/massive/munit/TestSuite.h"/>
+   <depend name="include/massive/munit/async/IAsyncDelegateObserver.h"/>
+   <depend name="include/massive/munit/client/AbstractTestResultClient.h"/>
+   <depend name="include/massive/munit/client/HTTPClient.h"/>
+   <depend name="include/massive/munit/client/PrintClientBase.h"/>
+   <depend name="include/massive/munit/client/RichPrintClient.h"/>
+   <depend name="include/massive/munit/client/SummaryReportClient.h"/>
+  </file>
+  <file name="src/Sys.cpp">
+   <depend name="include/Sys.h"/>
+   <depend name="include/cpp/Lib.h"/>
+  </file>
+  <file name="src/StringTools.cpp">
+   <depend name="include/StringTools.h"/>
+  </file>
+  <file name="src/StringBuf.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/StringBuf.h"/>
+  </file>
+  <file name="src/Std.cpp">
+   <depend name="include/Std.h"/>
+  </file>
+  <file name="src/Reflect.cpp">
+   <depend name="include/Reflect.h"/>
+  </file>
+  <file name="src/IMap.cpp">
+   <depend name="include/IMap.h"/>
+  </file>
+  <file name="src/List.cpp">
+   <depend name="include/List.h"/>
+  </file>
+  <file name="src/Lambda.cpp">
+   <depend name="include/Lambda.h"/>
+   <depend name="include/List.h"/>
+  </file>
+  <file name="src/FNV.cpp">
+   <depend name="include/FNV.h"/>
+   <depend name="include/Std.h"/>
+  </file>
+  <file name="src/EReg.cpp">
+   <depend name="include/EReg.h"/>
+   <depend name="include/cpp/Lib.h"/>
+  </file>
+  <file name="src/cpp/Lib.cpp">
+   <depend name="include/cpp/Lib.h"/>
+  </file>
+  <file name="src/Date.cpp">
+   <depend name="include/Date.h"/>
+  </file>
+  <file name="src/BloomFilterTest.cpp">
+   <depend name="include/BloomFilterTest.h"/>
+   <depend name="include/haxe/Log.h"/>
+   <depend name="include/massive/munit/Assert.h"/>
+   <depend name="include/massive/munit/util/Timer.h"/>
+  </file>
+  <file name="src/BloomFilter.cpp">
+   <depend name="include/BloomFilter.h"/>
+   <depend name="include/FNV.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/haxe/Log.h"/>
+  </file>
+  <file name="src/__boot__.cpp">
+  </file>
+  <file name="src/__files__.cpp">
+  </file>
+  <file name="src/__resources__.cpp">
+  </file>
+</files>
+<files id="__lib__">
+<compilerflag value="-Iinclude"/>
+  <file name="src/__lib__.cpp">
+   <depend name="include/TestMain.h"/>
+  </file>
+</files>
+<files id="__main__">
+<compilerflag value="-Iinclude"/>
+  <file name="src/__main__.cpp">
+   <depend name="include/TestMain.h"/>
+  </file>
+</files>
+<set name="HAXE_OUTPUT" value="TestMain" />
+<include name="${HXCPP}/build-tool/BuildCommon.xml"/>
+</xml>

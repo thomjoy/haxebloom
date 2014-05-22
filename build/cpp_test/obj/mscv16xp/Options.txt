@@ -1,0 +1,2 @@
+ -Dhamcrest="1" -Dhaxe3="1" -Dhaxe_ver="3.103" -Dhxcpp_api_level="311" -Dmconsole="1" -Dmcover="1" -Dmlib="1" -Dmunit="1"
+c:\code\haxe\lib/hxcpp/3,1,37/

@@ -1,0 +1,16 @@
+bin
+.temp
+lib
+
+.settings/
+.project/
+
+Thumbs.db
+.DS_Store
+TestSuite.hx
+.mcover
+# OS junk
+Thumbs.db
+.DS_Store
+.idea
+*.iml
