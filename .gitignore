@@ -5,7 +5,8 @@ lib
 .settings/
 .project/
 
-build/ 
+build/
+report/
 
 TestSuite.hx
 .mcover

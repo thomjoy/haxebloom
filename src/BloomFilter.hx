@@ -84,18 +84,4 @@ class BloomFilter
     	
     	return true;
 	}
-
-	public static function main()
-	{
-		var bloom = new BloomFilter(32, 4);
-		//var bloom = new BloomFilter(['Thom', 'Tim', 'Nick'], 4);
-		bloom.add('Thom');
-		bloom.add('Tim');
-		bloom.add('Nick');
-
-		trace(bloom.has('Thom'));
-		trace(bloom.has('Tim'));
-		trace(bloom.has('Nick'));
-		trace(bloom.has('No'));
-	}
 }
