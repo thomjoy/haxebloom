@@ -84,4 +84,8 @@ class BloomFilter
     	
     	return true;
 	}
+
+	public static function main()
+	{
+	}
 }
